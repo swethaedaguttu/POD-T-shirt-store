@@ -119,8 +119,6 @@ Note: Do not use Vercel. This project is optimized for Cloudflare.
 📷 Screenshots
 Home Page	Product Customization
 
-📚 License
-This project is licensed under the MIT License.
 
 📬 Submission
 When submitting:
@@ -146,4 +144,6 @@ Original transition: Codrops Repeating Image Transition
 
 UI components: CodePen
 
+⚖️ License
+This project is licensed under the MIT License.
 
