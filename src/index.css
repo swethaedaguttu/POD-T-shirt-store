@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 14px;
+  --color-text: #151515;
+  --color-bg: #fff;
+  --color-link: #151515;
+  --color-link-hover: #000000;
+  --color-close: #a22d1d;
+  --page-padding: 1.5rem;
+  --c-gap: 0.5rem;
+  --column: 80px;
+  --column-count: 4;
+  --aspect: 4/5;
+  --font-size-l: 18px;
+  --font-size-xl: clamp(2rem, 10vw, 6rem);
+  --panel-gap: 1rem;
+  --panel-img-size: calc((100vh - var(--page-padding) * 2) * 4 / 5 - var(--panel-gap));
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.2;
+  text-transform: lowercase;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.font-owners-xnarrow {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-halyard-display {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+}
+
+canvas {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.custom-cursor.hover {
+  transform: scale(1.5);
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Button hover effects */
+.hover\:bg-opacity-90:hover {
+  background-opacity: 0.9;
+}
+
+/* Navigation dots animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+} 
