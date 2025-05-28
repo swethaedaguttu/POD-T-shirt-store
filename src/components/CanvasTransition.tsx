@@ -225,19 +225,19 @@ const CanvasTransition: React.FC<CanvasTransitionProps> = ({
     // --- Animation Setup ---
     // Placeholder for start and end element bounds - in a real scenario, these would come from the DOM elements
     // For a full-screen grid transition, the start and end rects for the overall animation are likely the full canvas size
-    const startRect = { x: 0, y: 0, width: canvas.width, height: canvas.height };
-    const endRect = { x: 0, y: 0, width: canvas.width, height: canvas.height };
+    //const startRect = { x: 0, y: 0, width: canvas.width, height: canvas.height };
+    //const endRect = { x: 0, y: 0, width: canvas.width, height: canvas.height };
 
-    const startCenter = {
-      x: startRect.x + startRect.width / 2,
-      y: startRect.y + startRect.height / 2,
-    };
-    const endCenter = {
-      x: endRect.x + endRect.width / 2,
-      y: endRect.y + endRect.height / 2,
-    };
+    //const startCenter = {
+    // x: startRect.x + startRect.width / 2,
+    // y: startRect.y + startRect.height / 2,
+    //};
+    //const endCenter = {
+    //  x: endRect.x + endRect.width / 2,
+    //  y: endRect.y + endRect.height / 2,
+    //};
 
-    const fullSteps = config.steps + 2;
+    //const fullSteps = config.steps + 2;
 
     const generatedMovers: Mover[] = [];
 
@@ -258,12 +258,12 @@ const CanvasTransition: React.FC<CanvasTransitionProps> = ({
             // TODO: Implement more accurate endRect calculation based on original demo's panel/target positioning
 
             // Recalculate t based on mover index within the grid for staggered animation
-             const totalMovers = config.gridCols * config.gridRows;
-             const moverT = moverId / (totalMovers > 1 ? totalMovers - 1 : 1); // t value based on mover index, handle case with 1 mover
+             //const totalMovers = config.gridCols * config.gridRows;
+             //const moverT = moverId / (totalMovers > 1 ? totalMovers - 1 : 1); // t value based on mover index, handle case with 1 mover
 
             // Apply top offset (for sine motion) - needs to be based on overall animation progress (t)
             // Sine motion with tiling might require adjusting the source image position
-            const sineOffset = 0; // Placeholder
+            //const sineOffset = 0; // Placeholder
 
             // Add random wobble
             const wobbleX = (Math.random() - 0.5) * config.wobbleStrength;

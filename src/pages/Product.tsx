@@ -368,18 +368,18 @@ const Product: React.FC = () => {
     }
   };
 
-  const handlePrintText = () => {
-    if (textToPrint.trim()) {
-      setShowText(true);
-      if (previewRef.current) {
-        const previewRect = previewRef.current.getBoundingClientRect();
-        const topX = (previewRect.width - 200) / 2;
-        const topY = 20;
-        setTextPosition({ x: topX, y: topY });
-      }
-      setSuccessMessage('Text added to preview!');
-    }
-  };
+  //const handlePrintText = () => {
+    //if (textToPrint.trim()) {
+      //setShowText(true);
+      //if (previewRef.current) {
+        //const previewRect = previewRef.current.getBoundingClientRect();
+        //const topX = (previewRect.width - 200) / 2;
+        //const topY = 20;
+        //setTextPosition({ x: topX, y: topY });
+      //}
+      //setSuccessMessage('Text added to preview!');
+    //}
+  //};
 
   const TextToPrintInput = () => {
     const [localText, setLocalText] = useState(textToPrint);

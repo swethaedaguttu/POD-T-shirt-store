@@ -1,0 +1,7 @@
+This directory will contain the following images:
+- tshirt1.jpg
+- tshirt2.jpg
+- tshirt3.jpg
+- tshirt4.jpg
+
+Please add your own images to this directory. 
