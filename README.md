@@ -116,6 +116,7 @@ Then deploy /dist folder to Cloudflare Pages using your dashboard or wrangler.
 
 Note: Do not use Vercel. This project is optimized for Cloudflare.
 
+link : https://pod-t-shirt-store-a73.pages.dev/
 📷 Screenshots
 Home Page	Product Customization
 
